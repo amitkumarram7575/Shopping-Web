@@ -25,7 +25,7 @@ SECRET_KEY = '$n3pt3i$)$5mo4_4ownz=z8r44pr(#rv!vx%$qo(#&=ar)3i4&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []#'shopping-good.herokuapp.com'
+ALLOWED_HOSTS = ['shopping-good.herokuapp.com']#'shopping-good.herokuapp.com'
 
 
 # Application definition
