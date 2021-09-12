@@ -25,7 +25,7 @@ SECRET_KEY = '$n3pt3i$)$5mo4_4ownz=z8r44pr(#rv!vx%$qo(#&=ar)3i4&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shopping-good.herokuapp.com']#'shopping-good.herokuapp.com'
+ALLOWED_HOSTS = ['shopping-good.herokuapp.com']#'shopping-good.herokuapp.com', '127.0.0.1'
 
 
 # Application definition
@@ -124,14 +124,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR ,'media/')
 LOGIN_REDIRECT_URL = '/profile/'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_HOST = 'smtp.gmail.com'#'smtp.sendgrid.net'
-#EMAIT_PORT = 587
-#EMAIL_USE_TLS = True
-#EMAIL_HOST_USER = 'amit@gmail.com'
-#EMAIL_HOST_PASSWORD = ''
+# SMTP Configuration
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'amit9707575@gmail.com'
+EMAIL_HOST_PASSWORD = 'sgaesylhpjclgfij'
+
 
 
